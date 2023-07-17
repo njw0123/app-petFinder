@@ -4,7 +4,7 @@
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="messages">
 	<insert id="create" parameterType="hashmap">
-		insert into messages values(messages_seq.nextval, #{target}, #{body}, #{pass})
+		insert into messages(target, body, pass) values(#{target}, #{body}, #{pass})
 	</insert>
 	<select id="readByTarget" resultType="message">
 		select * from messages where target=#{target}
