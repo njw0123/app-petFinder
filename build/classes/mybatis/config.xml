@@ -4,25 +4,23 @@
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<settings>
-		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
 	</settings>
 	<typeAliases>
-		<typeAlias type="data.vo.Message" alias="message"/>
+		<typeAlias type="data.vo.Message" alias="message" />
 	</typeAliases>
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
 			<dataSource type="POOLED">
-				<property name="driver"
-					value="com.mysql.jdbc.Driver" />
-				<property name="url"
-					value="jdbc:mysql://database.c40ytla3kbzc.ap-northeast-2.rds.amazonaws.com:3306/app_animal" />
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://database.c40ytla3kbzc.ap-northeast-2.rds.amazonaws.com:3306/app_animal" />
 				<property name="username" value="admin" />
 				<property name="password" value="1q2w3e4r" />
 			</dataSource>
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="mybatis/mapper/messages-mapper.xml"/>
+		<mapper resource="mybatis/mapper/messages-mapper.xml" />
 	</mappers>
 </configuration>

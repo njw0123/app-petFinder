@@ -59,7 +59,7 @@
 					<input type="hidden" name="target" value="${item.desertionNo }" />
 					<textarea style="width: 100%; height: 120px; resize: none"
 						name="body"></textarea>
-					<input type="password" name="pass" />
+					<input type="password" name="pass" placeholder="비밀번호"/>
 					<button type="submit">응원하기</button>
 				</form>
 			</div>
