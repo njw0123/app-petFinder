@@ -14,12 +14,14 @@ import repoistory.MessagesDAO;
 public class WriteController extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setCharacterEncoding("UTF-8");
 		String target = req.getParameter("target");
 		String pass = req.getParameter("pass");
 		String body = req.getParameter("body");
 		
 		MessagesDAO.createMessage(target, body, pass);
 		
+		resp.setCharacterEncoding("UTF-8");
 		resp.sendRedirect("/detail?no="+target);
 	}
 }

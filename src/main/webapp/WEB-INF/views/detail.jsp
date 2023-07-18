@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>유기동물 정보 조회</title>
 <style>
 * {
 	box-sizing: border-box;
@@ -36,7 +36,6 @@
 			</div>
 			<ul>
 				<li>발견장소 : ${item.orgNm } ${item.happenPlace }</li>
-				<li>특징 : ${item.specialMark }</li>
 				<li>특징 : ${item.specialMark }</li>
 			</ul>
 			<div id="map"
